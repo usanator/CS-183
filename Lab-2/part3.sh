@@ -7,7 +7,7 @@ declare -i counter1=0
 declare -i counter2=0
 
 if [ -e "$FILE" ]; then
-	if[ "$counter1" -eq 0 ];
+	if[ "$counter1" -eq 0 ]; then
 		echo "$(date +"%Y-%m-%d %T) - File \"$FILE\" has been found" >> $LOG
 		counter1=$((counter1 + 1))
 	fi
